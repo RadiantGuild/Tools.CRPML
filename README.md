@@ -34,7 +34,7 @@ that is a parent of (or the) directory you want to run `crpml` in.
 ### Config file
 
 This directory should contain a file, `config.json` (you can get a schema for this file
-from <!--BEGIN SCHEMA_URL"config"-->https://rad.gd/dev/crpml@0.1.0/config.schema.json <!--END-->).
+from <!--BEGIN SCHEMA_URL"config"-->https://rad.gd/dev/crpml@0.1.1/config.schema.json <!--END-->).
 
 This file can have a key `outDir` which points to the directory that the output will be written to, relative to the
 project directory, so that you don’t have to change into the root of your project each time you run CRPML. It defaults
@@ -51,7 +51,7 @@ templates. In here, you can make as many directories as you want. Their names wi
 make it something reasonable.
 
 Inside each template’s directory, create a file called `template.json` (the schema is available at
-from <!--BEGIN SCHEMA_URL"template"-->https://rad.gd/dev/crpml@0.1.0/template.schema.json <!--END-->). For now, set
+from <!--BEGIN SCHEMA_URL"template"-->https://rad.gd/dev/crpml@0.1.1/template.schema.json <!--END-->). For now, set
 a `displayName` (the name shown to the user) and a `description` if you want to (some short text shown after the display
 name). You will fill out the rest of the file as you go.
 
