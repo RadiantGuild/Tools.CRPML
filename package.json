@@ -1,0 +1,38 @@
+{
+  "name": "crpml",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "crpml": "./dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist",
+    "build": "rollup -c",
+    "watch": "rollup -wc",
+    "version": "changeset version && node scripts/readme-template.js",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.4.2",
+    "@changesets/cli": "^2.19.0",
+    "@types/common-tags": "^1.8.1",
+    "@types/debug": "^4.1.7",
+    "@types/inquirer": "^8.1.3",
+    "@types/node": "^14.17.21",
+    "@types/validate-npm-package-name": "^3.0.3",
+    "rollup": "^2.59.0",
+    "rollup-plugin-ts": "^2.0.4",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "ajv": "^8.6.3",
+    "common-tags": "^1.8.0",
+    "debug": "^4.3.2",
+    "deepmerge": "^4.2.2",
+    "execa": "^5.1.1",
+    "inquirer": "^8.2.0",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}
